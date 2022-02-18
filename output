@@ -1,0 +1,47 @@
+newman
+
+Assessment
+
+→ Login
+  POST https://uibank-api.azurewebsites.net/api/users/login [200 OK, 891B, 794ms]
+  √  Status code is 200
+
+→ Accountdetails
+  GET https://uibank-api.azurewebsites.net/api/accounts?filter[where][userId]=620f1dd78932d4005f2a8877 [200 OK, 5.55kB, 195ms]
+  √  Status code is 200
+
+→ https://uibank-api.azurewebsites.net/api/users/login
+  POST https://uibank-api.azurewebsites.net/api/users/login [200 OK, 627B, 291ms]
+  √  Status code is 200
+
+→ https://uibank-api.azurewebsites.net/api/accounts
+  POST https://uibank-api.azurewebsites.net/api/accounts [200 OK, 655B, 177ms]
+  √  Status code is 200
+
+→ createaccount
+  POST https://uibank-api.azurewebsites.net/api/accounts [200 OK, 599B, 173ms]
+  √  Status code is 200
+
+→ https://uibank-api.azurewebsites.net/api/accounts?filter\[where\]\[userId\]=620f1dd78932d4005f2a8877
+  GET https://uibank-api.azurewebsites.net/api/accounts?filter\[where\]\[userId\]=620f1dd78932d4005f2a8877 [200 OK, 5.98kB, 187ms]
+  √  Status code is 200
+
+┌─────────────────────────┬─────────────────────┬────────────────────┐
+│                         │            executed │             failed │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              iterations │                   1 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│                requests │                   6 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│            test-scripts │                   6 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│      prerequest-scripts │                   0 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              assertions │                   6 │                  0 │
+├─────────────────────────┴─────────────────────┴────────────────────┤
+│ total run duration: 2.2s                                           │
+├────────────────────────────────────────────────────────────────────┤
+│ total data received: 11.28kB (approx)                              │
+├────────────────────────────────────────────────────────────────────┤
+│ average response time: 302ms [min: 173ms, max: 794ms, s.d.: 223ms] │
+└────────────────────────────────────────────────────────────────────┘
