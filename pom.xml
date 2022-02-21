@@ -3,6 +3,18 @@
   <groupId>org.pom</groupId>
   <artifactId>pom</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+<parent>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>1.567</version>
+</parent>
+
+<repositories>
+    <repository>
+        <id>repo.jenkins-ci.org</id>
+        <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+</repositories>
 
   <dependencies>
   <dependency>
@@ -14,14 +26,7 @@
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>deploy</artifactId>
     <version>1.16</version>
-</dependency>
-    <repositories>
-    <repository>
-        <id>repo.jenkins-ci.org</id>
-        <url>http://repo.jenkins-ci.org/public/</url>
-    </repository>
-</repositories>
-
+    </dependency>
     <dependency>
       <groupId>com.sarav</groupId>
 <artifactId>TomcatMavenApp</artifactId>
