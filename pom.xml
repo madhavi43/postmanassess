@@ -3,12 +3,6 @@
   <groupId>org.pom</groupId>
   <artifactId>pom</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-<parent>
-        <groupId>org.jenkins-ci.plugins</groupId>
-        <artifactId>plugin</artifactId>
-        <version>1.567</version>
-        <relativePath></relativePath>
-    </parent>
   <dependencies>
   <dependency>
 <groupId>io.cucumber</groupId>
@@ -47,6 +41,14 @@
 <artifactId>extentreports</artifactId>
 <version>3.1.5</version>
 </dependency>
+    <!-- https://mvnrepository.com/artifact/org.jenkins-ci.plugins/plugin -->
+<dependency>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>1.411</version>
+    <type>pom</type>
+</dependency>
+
   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
