@@ -15,6 +15,13 @@
     <artifactId>deploy</artifactId>
     <version>1.16</version>
 </dependency>
+    <repositories>
+    <repository>
+        <id>repo.jenkins-ci.org</id>
+        <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+</repositories>
+
     <dependency>
       <groupId>com.sarav</groupId>
 <artifactId>TomcatMavenApp</artifactId>
